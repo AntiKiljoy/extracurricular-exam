@@ -11,8 +11,7 @@ async function initApp() {
 }
 
 async function getProjects(){
-  const response = await fetch ("https://extracurricularexam.connorkilroy.dk//wp-json/wp/v2/projects?acf_format=standard"
-);
+  const response = await fetch ("https://extracurricularexam.connorkilroy.dk//wp-json/wp/v2/projects?acf_format=standard"); // Link to the JSON file, where the project data is kept.
 const data = await response.json();
 return data;
 }
@@ -36,7 +35,7 @@ function displayProjectsGrid(projects){
   for (const project of projects){
     console.log(project.acf.image); // Log the image URL to the console
 
-    projectsGrid.insertAdjacentHTML(
+    projectsGrid.insertAdjacentHTML( //In here is where all the so called attributes are being called, so the image, link, title and description
       "beforeend",
       /*html*/ 
       `

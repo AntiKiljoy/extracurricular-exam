@@ -18,14 +18,14 @@ a {
   color: rgb(38, 76, 89);
 }
 
-.header-title {
+.header-title { /*Page header title, that says look at this...*/
   background-color: rgb(142, 129, 123);
   width: 100%;
   height: 2.5em;
   text-align: center;
 }
 
-.siteDesc {
+.siteDesc { /* this is for the little description text I gave*/
   background-color: rgb(122, 136, 142);
   text-align: center;
   color: rgb(255, 255, 255);
