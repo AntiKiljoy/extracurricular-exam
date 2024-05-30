@@ -45,7 +45,7 @@ function displayProjectsGrid(projects){
           <h2>${project.acf.title}</h2>
           <p>${project.acf.description}</p>
           <p>${project.acf.client}</p>
-          <a href="linkto:${project.acf.link}">${project.acf.link}</a>
+          <a href="${project.acf.link}">${project.acf.link}</a>
           </div>
       </article>
       `
